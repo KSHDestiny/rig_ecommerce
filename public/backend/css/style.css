@@ -1,0 +1,31 @@
+/* Custom Styling DataTable */
+table.dataTable>tbody>tr.child ul.dtr-details{
+    width: 100%;
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details>li{
+    text-align: left !important;
+    border: none !important;
+}
+/* DataTable Processing Loader */
+div.dataTables_wrapper div.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -26px;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.dataTables_processing.card{
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+div.dataTables_processing>div:last-child {
+    display: none;
+}

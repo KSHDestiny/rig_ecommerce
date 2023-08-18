@@ -1,0 +1,222 @@
+:root {
+    --theme-primary: #602034;
+    --theme-crimson: #9A002A;
+    --theme-secondary: #F8F8F8;
+    --theme-light: #FFFFFF;
+    --theme-smoke: #DEE2E6;
+    --theme-dark: #212529;
+    --theme-black: #212529;
+    --theme-gray: #707070;
+    --theme-gray2: #01233E;
+    --theme-ash: #CED4DA;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* font-family: 'Rubik', sans-serif; */
+    font-size: 0.875rem;
+    /* 14px */
+    /* height: 300vh; */
+}
+
+input {
+    /* font-family: 'Rubik', sans-serif !important; */
+}
+
+.fs-13 {
+    font-size: 0.813rem;
+}
+
+.fs-14 {
+    font-size: 0.875rem;
+}
+
+.fs-16 {
+    font-size: 1rem;
+}
+
+.fw-900 {
+    font-weight: 900 !important;
+}
+
+.custom-px-28 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+.custom-py-9 {
+    padding-top: 0.563rem;
+    padding-bottom: 0.563rem;
+}
+
+.custom-py-12 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.custom-py-14 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+}
+
+.sec-header .bottom-header .nav-link {
+    color: var(--theme-light);
+    text-transform: uppercase;
+    padding-right: 1.5rem;
+    font-weight: 600;
+}
+
+.sec-mv img {
+    border-radius: 10px;
+}
+
+/* .img-bx img{
+} */
+.img-bx {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+}
+
+.img-bx::before {
+    content: "\ecb5";
+    font-family: 'remixicon';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0003;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 3em;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.img-bx:hover::before {
+    opacity: 1;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px !important;
+    height: 10px !important;
+    line-height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    width: 48px !important;
+    border-radius: 12px !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #000;
+}
+
+.cmn-ttl {
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    position: relative;
+    /*    padding-left: 0;*/
+    /*    padding-right: 0;*/
+    font-weight: 700;
+}
+
+.cmn-ttl:before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: 0;
+    height: 5.5px;
+    width: 75px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.cmn-ttl:after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: 2px;
+    height: 1px;
+    width: 95%;
+    max-width: 255px;
+    background-color: #333;
+}
+
+/* Styling Section Footer */
+.sec-footer {
+    background-color: var(--theme-dark);
+    color: var(--theme-light);
+}
+
+.sec-footer h5 {
+    font-weight: 600;
+    text-shadow: 1.95px 1.95px 0px var(--theme-dark);
+}
+
+.sec-footer .footer-nav:nth-of-type(1) h5 {
+    position: relative;
+}
+
+.sec-footer h5 span {
+    color: var(--theme-amber);
+}
+
+.sec-footer ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.sec-footer ul li {
+    line-height: 2.5;
+}
+
+.sec-footer ul li a {
+    color: var(--theme-light);
+    text-decoration: none;
+}
+
+.sec-footer ul li a .ri {
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.9px) {
+    .add-cart-btn {
+        left: 32px;
+    }
+}
+
+/* Smart Phone */
+@media (max-width: 767.9px) {
+    .add-cart-btn {
+        left: 32px;
+    }
+}
